@@ -44,3 +44,19 @@ Cloud Frontの設定で403が起こった
     ]
 }
 ```
+
+## AWS WAFとは
+
+バックエンドには次のようなものを選べる
+
+- Amazon CloudFront
+- Application Load Balancer
+- Amazon API Gateway
+- AWS AppSync
+
+### WebACL・Ruleとは
+
+- 一個以上のRuleをまとめた設定の大枠
+- RuleはWebACLの中に複数存在し、Orderで適用順を決めることができる
+- Ruleは自分で条件を作成することもできるし、マネージドルールと言われるすでに作られたものを使うこともできる
+  - RuleではRate制限を追加したり、ユーザーのIPや場所からアクセスを許可したり拒否したりできる
